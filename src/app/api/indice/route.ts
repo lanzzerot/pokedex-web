@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { buildIndex } from "@/lib/search-index";
 
 export const revalidate = 86400;
+export const dynamic = "force-dynamic";
 
 /**
  * Indice completo del catalogo en un unico JSON, para que el buscador del
